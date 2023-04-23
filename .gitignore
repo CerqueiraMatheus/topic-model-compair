@@ -2,3 +2,6 @@
 *.pt
 env/
 octis-compair/
+.*
+.*/
+__pycache__/
