@@ -1,2 +1,4 @@
 *.pkl
 *.pt
+env/
+octis-compair/
