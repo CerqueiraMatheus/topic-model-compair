@@ -15,23 +15,13 @@ from skopt.space.space import Real, Categorical, Integer
 from octis.evaluation_metrics.coherence_metrics import Coherence
 from octis.evaluation_metrics.diversity_metrics import TopicDiversity
 
-from custom_metric import TDCI
+from custom.metrics.TDCI import TDCI
+# from custom_models import CustomTop2Vec
 
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
+base_csv_path = "tunning/csv/"
+base_res_path = "tunning/res/"
 
-sns.set(style="darkgrid")
-sns.set_context("paper")
-
-
-def symmetrize_y_axis(axes, y_min, y_max):
-    # y_max = np.abs(axes.get_ylim()).max()
-    axes.set_ylim(ymin=y_min, ymax=y_max)
-
-
-def optimize(model: any, search_space: dict, save_path: str, csv_path: str):
+def __optimize(model: any, search_space: dict, save_path: str, csv_path: str):
     """
     Optimize a given model in a search space.
 
@@ -49,7 +39,8 @@ def optimize(model: any, search_space: dict, save_path: str, csv_path: str):
         random_state=42,
         model_runs=model_runs,
         save_models=True,
-        extra_metrics=[topic_coherence, topic_diversity],  # to keep track of other metrics
+        # to keep track of other metrics
+        extra_metrics=[topic_coherence, topic_diversity],
         number_of_call=optimization_runs,
         save_path=save_path,
     )
@@ -58,114 +49,163 @@ def optimize(model: any, search_space: dict, save_path: str, csv_path: str):
     ctm_optimization_result.save_to_csv(csv_path)
 
 
-def optimize_ctm():
+def optimize_ctm(n_topics: int = 10):
     # Define search space
     ctm_search_space = {
-        "n_topics": list(range(10, 41, 10)),
+        "n_topics": [n_topics],
         "num_layers": Categorical({1, 2, 3, 4}),
         "num_neurons": Categorical({10, 30, 50, 100, 200, 300}),
         "activation": Categorical(
-            {"softplus", "relu", "sigmoid", "tanh", "leakyrelu", "rrelu", "elu", "selu"}
+            {"softplus", "relu", "sigmoid", "tanh",
+                "leakyrelu", "rrelu", "elu", "selu"}
         ),
         "solver": Categorical({"adam", "sgd"}),
         "dropout": Real(0.0, 0.95),
+        "inference_type": Categorical({"zeroshot", "combined"})
     }
 
     # Define model and optimize
     model_ctm = CTM()
-    optimize(
+    __optimize(
         model_ctm,
         ctm_search_space,
-        "tunning/test_ctm//",
-        "tunning_results/results_ctm.csv",
+        base_res_path + "test_ctm" + str(n_topics) + "//",
+        base_csv_path + "results_ctm" + str(n_topics) + ".csv"
     )
 
-def optimize_etm():
+
+def optimize_etm(n_topics: int = 10):
     etm_search_space = {
-        "n_topics": list(range(10, 41, 10)),
+        "num_topics": [n_topics],
         "optimizer": Categorical({"adam", "adagrad", "adadelta", "rmsprop", "asgd", "sgd"}),
         "t_hidden_size": Integer(400, 1000),
         "rho": Integer(200, 600),
         "num_neurons": Categorical({100, 200, 300}),
-        "activation": Categorical({'sigmoid', 'relu', 'softplus'}), 
+        "activation": Categorical({'sigmoid', 'relu', 'softplus'}),
         "dropout": Real(0.0, 0.95)
     }
 
     model_etm = ETM(device="gpu")
-    optimize(model_etm, 
-         etm_search_space, 
-         "tunning/test_etm//", 
-         "tunning_results/results_etm.csv"
-         )
+    __optimize(model_etm,
+               etm_search_space,
+               base_res_path + "test_etm" + str(n_topics) + "//",
+               base_csv_path + "results_etm" + str(n_topics) + ".csv"
+               )
 
-def visualize_model_along_exec(path: str, alg_name: str):
-    # Read dataset
-    df = pd.read_csv(path)
 
-    # Get model_runs
-    model_runs = df["Mean(model_runs)"]
-    topic_div = df["Coherence(not optimized)"]
+def optimize_lda(n_topics: int = 10):
+    lda_search_space = {
+        "num_topics": [n_topics],
 
-    # Define executions
-    execs = list(range(len(model_runs)))
+    }
 
-    fig, ax = plt.subplots()
-    # fig = plt.figure()
+    model_lda = LDA()
+    __optimize(model_lda,
+               lda_search_space,
+               base_res_path + "test_lda" + str(n_topics) + "//",
+               base_csv_path + "results_lda" + str(n_topics) + ".csv"
+               )
 
-    # Define axis and title
-    plt.xlabel("Execução")
-    plt.title("Desempenho ao longo do espaço de busca - " + alg_name)
 
-    # Define topic coherence plot
-    ax1 = sns.lineplot(
-        x=execs, y=model_runs, color=sns.color_palette("tab10")[0], label="TC mean"
-    )
-    ax1.set_ylabel("Topic Coherence")
-    symmetrize_y_axis(ax1, -0.6, 0.9)
-    ax1.get_legend().remove()
+def optimize_lsi(n_topics: int = 10):
+    lsi_search_space = {
+        "num_topics": [n_topics],
 
-    # Define topic diversity plot
-    plt.xlabel("Execution")
-    plt.title("Performance along search space - " + alg_name)
-    ax2 = ax1.twinx()
-    ax2 = sns.lineplot(
-        x=execs, y=topic_div, color=sns.color_palette("tab10")[1], label="TD mean"
-    )
-    ax2.grid(False)
-    ax2.set_ylabel("Topic Diversity")
-    symmetrize_y_axis(ax2, 0.2, 1.0)
-    ax2.get_legend().remove()
+    }
 
-    # Legend
-    fig.legend(
-        loc="upper right", bbox_to_anchor=(0.95, 0.2), bbox_transform=ax.transAxes
-    )
+    model_lsi = LSI()
+    __optimize(model_lsi,
+               lsi_search_space,
+               base_res_path + "test_lsi" + str(n_topics) + "//",
+               base_csv_path + "results_lsi" + str(n_topics) + ".csv"
+               )
 
-    # Export
-    plt.savefig("plots/" + alg_name + ".svg", format="svg", dpi=300)
 
-    # Show
-    plt.show()
+def optimize_nmf(n_topics: int = 10):
+    nmf_search_space = {
+        "num_topics": [n_topics],
+    }
 
-    # Get best
-    best_conf = (
-        df.sort_values(by="Mean(model_runs)", ascending=False).head(1).to_numpy()
-    )
+    model_nmf = NMF()
+    __optimize(model_nmf,
+               nmf_search_space,
+               base_res_path + "test_nmf" + str(n_topics) + "//",
+               base_csv_path + "results_nmf" + str(n_topics) + ".csv"
+               )
 
-    # Print params
-    print("Best params")
-    for i in list(range(len(df.columns))):
-        print(df.columns[i] + " = " + str(best_conf[0][i]))
+
+def optimize_prodlda(n_topics: int = 10):
+    prodlda_search_space = {
+        "num_topics": [n_topics],
+    }
+
+    model_prodlda = ProdLDA()
+    __optimize(model_prodlda,
+               prodlda_search_space,
+               base_res_path + "test_prodlda" + str(n_topics) + "//",
+               base_csv_path + "results_prodlda" + str(n_topics) + ".csv"
+               )
+
+
+def optimize_neurallda(n_topics: int = 10):
+    neurallda_search_space = {
+        "num_topics": [n_topics],
+    }
+
+    model_neurallda = NeuralLDA()
+    __optimize(model_neurallda,
+               neurallda_search_space,
+               base_res_path + "test_neurallda" + str(n_topics) + "//",
+               base_csv_path + "results_neurallda" + str(n_topics) + ".csv"
+               )
+
+
+def optimize_hdp():
+    hdp_search_space = {
+    }
+
+    model_hdp = HDP()
+    __optimize(model_hdp,
+               hdp_search_space,
+               base_res_path + "test_hdp//",
+               base_csv_path + "results_hdp.csv"
+               )
+
+
+# TODO: implementation of the model is not complete
+def optimize_custom_top2vec():
+    custom_top2vec_search_space = {
+    }
+
+    model_custom_top2vec = CustomTop2Vec()
+    __optimize(model_custom_top2vec,
+               custom_top2vec_search_space,
+               base_res_path + "test_custom_top2vec//",
+               base_csv_path + "results_custom_top2vec.csv"
+               )
+
+
+# TODO: implementation of the model is not complete
+def optimize_bertopic():
+    bertopic_search_space = {
+    }
+
+    model_bertopic = None
+    __optimize(model_bertopic,
+               bertopic_search_space,
+               base_res_path + "test_bertopic//",
+               base_csv_path + "results_bertopic.csv"
+               )
 
 
 if __name__ == "__main__":
     import os
 
-    os.chdir(os.getenv("HOME"))
-    os.chdir("octis-compair")
+    # os.chdir(os.getenv("HOME"))
+    # os.chdir("octis-compair")
 
     model_runs = 1
-    optimization_runs = 5
+    optimization_runs = 2
 
     dataset = Dataset()
     # dataset.load_custom_dataset_from_folder("pl_3723_2019")
@@ -179,7 +219,17 @@ if __name__ == "__main__":
 
     tdci = TDCI(texts=dataset.get_corpus())
 
-    # optimize_ctm()
-    # optimize_etm()
+    # Run optimizer for models depending on n_topics
+    for n_topics in [10]:
+        # optimize_ctm(n_topics)
+        optimize_etm(n_topics)
+        optimize_lda(n_topics)
+        optimize_lsi(n_topics)
+        optimize_nmf(n_topics)
+        optimize_prodlda(n_topics)
+        optimize_neurallda(n_topics)
 
-    visualize_model_along_exec("tunning_results/results_etm.csv", "ETM")
+    # Models that doesn't require n_topics
+    optimize_hdp()
+    # optimize_custom_top2vec()
+    # optimize_bertopic()
