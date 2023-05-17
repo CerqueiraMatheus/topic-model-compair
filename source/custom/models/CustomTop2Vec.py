@@ -85,7 +85,6 @@ class CustomTop2Vec(AbstractModel):
         self._prepare_model(train_corpus)
 
         result["topics"] = self._get_topics()
-        result["topic-word-matrix"] = self._get_topic_word_matrix()
 
         print(self.id2word)
 
@@ -104,60 +103,12 @@ class CustomTop2Vec(AbstractModel):
             topics.append(words)
         result["topics"] = topics
 
-        result["topic-document-matrix"] = self._get_topic_document_matrix()
-
-        # if self.use_partitions:
-        #     new_corpus = [self.id2word.doc2bow(
-        #         document) for document in test_corpus]
-        #     if self.update_with_test:
-        #         self.hyperparameters["corpus"] = new_corpus
-        #         self._prepare_model(test_corpus)
-        #         self.id_corpus.extend(new_corpus)
-
-        #         result["test-topic-word-matrix"] = self._model.get_topics()
-
-        #         if top_words > 0:
-        #             topics_output = []
-        #             for topic in result["test-topic-word-matrix"]:
-        #                 top_k = np.argsort(topic)[-top_words:]
-        #                 top_k_words = list(
-        #                     reversed([self.id2word[i] for i in top_k]))
-        #                 topics_output.append(top_k_words)
-        #             result["test-topics"] = topics_output
-
-        #         result["test-topic-document-matrix"] = self._get_topic_document_matrix()
-
-        #     else:
-        #         test_document_topic_matrix = []
-        #         for document in new_corpus:
-        #             document_topics_tuples = self._get_document_topic_tuples()
-        #             document_topics = np.zeros(
-        #                 self._model.get_num_topics())
-        #             for single_tuple in document_topics_tuples:
-        #                 document_topics[single_tuple[0]] = single_tuple[1]
-
-        #             test_document_topic_matrix.append(document_topics)
-        #         result["test-topic-document-matrix"] = np.array(
-        #             test_document_topic_matrix).transpose()
         return result
 
     def _prepare_model(self, dataset):
         self._model = Top2Vec(
             documents=[' '.join(doc) for doc in dataset],
-            # speed="learn", workers=8
-            # min_count=self.hyperparameters["min_count"],
-            # embedding_model=self.hyperparameters["embedding_model"],
-            # embedding_model_path=self.hyperparameters["embedding_model_path"],
-            # speed=self.hyperparameters["speed"],
-            # use_corpus_file=self.hyperparameters["use_corpus_file"],
-            # document_ids=self.hyperparameters["document_ids"],
-            # keep_documents=self.hyperparameters["keep_documents"],
-            # workers=self.hyperparameters["workers"],
-            # tokenizer=self.hyperparameters["tokenizer"],
-            # use_embedding_model_tokenizer=self.hyperparameters["use_embedding_model_tokenizer"],
-            # umap_args=self.hyperparameters["umap_args"],
-            # hdbscan_args=self.hyperparameters["hdbscan_args"],
-            # verbose=self.hyperparameters["verbose"]
+            embedding_model='universal-sentence-encoder-multilingual',
         )
 
     def _get_topics(self):

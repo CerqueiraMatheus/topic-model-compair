@@ -101,7 +101,7 @@ class CustomBERTopic(AbstractModel):
         bertopic_topics = [
             [
                 vals[0] if vals[0] in all_words else all_words[0]
-                for vals in self._model.get_topic(i)[:10]
+                for vals in self._model.get_topic(i)[:top_words]
             ]
             for i in range(len(set(topics)) - 1)
         ]
@@ -112,7 +112,8 @@ class CustomBERTopic(AbstractModel):
 
     def _prepare_model(self):
         self._model = BERTopic(
-            language="multilingual"
+            language="multilingual",
+            embedding_model='all-mpnet-base-v2'
         )
     
 
