@@ -2,7 +2,8 @@
 
 import os
 import sys
-from tqdm import tqdm
+from useful_fun import HiddenPrints
+from custom.metrics.TDCI import TDCI
 from octis.models.CTM import CTM
 from octis.models.ETM import ETM
 from octis.models.HDP import HDP
@@ -11,15 +12,12 @@ from octis.models.LSI import LSI
 from octis.models.NMF import NMF
 from octis.models.ProdLDA import ProdLDA
 from octis.dataset.dataset import Dataset
-from useful_fun import HiddenPrints
 from octis.models.NeuralLDA import NeuralLDA
+from custom.models import CustomTop2Vec, CustomBERTopic
 from octis.optimization.optimizer import Optimizer
 from skopt.space.space import Real, Categorical, Integer
 from octis.evaluation_metrics.coherence_metrics import Coherence
 from octis.evaluation_metrics.diversity_metrics import TopicDiversity
-
-from custom.metrics.TDCI import TDCI
-# from custom_models import CustomTop2Vec
 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -28,6 +26,7 @@ base_csv_path = "tunning/csv/"
 base_res_path = "tunning/res/"
 dataset_folder_path = ""
 dataset_name = ""
+
 
 def __optimize(model: any, search_space: dict, save_path: str, csv_path: str):
     """
@@ -50,7 +49,7 @@ def __optimize(model: any, search_space: dict, save_path: str, csv_path: str):
             # to keep track of other metrics
             extra_metrics=[topic_coherence, topic_diversity],
             number_of_call=optimization_runs,
-            save_path=save_path,
+            save_path=save_path
         )
 
         # Export csv
@@ -80,8 +79,10 @@ def optimize_ctm(n_topics: int = 10):
     __optimize(
         model_ctm,
         ctm_search_space,
-        base_res_path + "ctm" + "-" + dataset_name + "-" +str(n_topics) + "//",
-        base_csv_path + "ctm" + "-" + dataset_name + "-" +str(n_topics) + ".csv"
+        base_res_path + "ctm" + "-" +
+        dataset_name + "-" + str(n_topics) + "//",
+        base_csv_path + "ctm" + "-" + dataset_name +
+        "-" + str(n_topics) + ".csv"
     )
 
 
@@ -100,8 +101,10 @@ def optimize_etm(n_topics: int = 10):
     model_etm = ETM(device="gpu")
     __optimize(model_etm,
                etm_search_space,
-               base_res_path + "etm" + "-" + dataset_name + "-" +str(n_topics) + "//",
-               base_csv_path + "etm" + "-" + dataset_name + "-" +str(n_topics) + ".csv"
+               base_res_path + "etm" + "-" +
+               dataset_name + "-" + str(n_topics) + "//",
+               base_csv_path + "etm" + "-" + dataset_name +
+               "-" + str(n_topics) + ".csv"
                )
 
 
@@ -120,8 +123,10 @@ def optimize_lda(n_topics: int = 10):
     model_lda = LDA()
     __optimize(model_lda,
                lda_search_space,
-               base_res_path + "lda" + "-" + dataset_name + "-" +str(n_topics) + "//",
-               base_csv_path + "lda" + "-" + dataset_name + "-" +str(n_topics) + ".csv"
+               base_res_path + "lda" + "-" +
+               dataset_name + "-" + str(n_topics) + "//",
+               base_csv_path + "lda" + "-" + dataset_name +
+               "-" + str(n_topics) + ".csv"
                )
 
 
@@ -137,8 +142,10 @@ def optimize_lsi(n_topics: int = 10):
     model_lsi = LSI()
     __optimize(model_lsi,
                lsi_search_space,
-               base_res_path + "lsi" + "-" + dataset_name + "-" +str(n_topics) + "//",
-               base_csv_path + "lsi" + "-" + dataset_name + "-" +str(n_topics) + ".csv"
+               base_res_path + "lsi" + "-" +
+               dataset_name + "-" + str(n_topics) + "//",
+               base_csv_path + "lsi" + "-" + dataset_name +
+               "-" + str(n_topics) + ".csv"
                )
 
 
@@ -158,8 +165,10 @@ def optimize_nmf(n_topics: int = 10):
     model_nmf = NMF()
     __optimize(model_nmf,
                nmf_search_space,
-               base_res_path + "nmf" + "-" + dataset_name + "-" +str(n_topics) + "//",
-               base_csv_path + "nmf" + "-" + dataset_name + "-" +str(n_topics) + ".csv"
+               base_res_path + "nmf" + "-" +
+               dataset_name + "-" + str(n_topics) + "//",
+               base_csv_path + "nmf" + "-" + dataset_name +
+               "-" + str(n_topics) + ".csv"
                )
 
 
@@ -180,8 +189,10 @@ def optimize_prodlda(n_topics: int = 10):
     model_prodlda = ProdLDA()
     __optimize(model_prodlda,
                prodlda_search_space,
-               base_res_path + "prodlda" + "-" + dataset_name + "-" +str(n_topics) + "//",
-               base_csv_path + "prodlda" + "-" + dataset_name + "-" +str(n_topics) + ".csv"
+               base_res_path + "prodlda" + "-" +
+               dataset_name + "-" + str(n_topics) + "//",
+               base_csv_path + "prodlda" + "-" +
+               dataset_name + "-" + str(n_topics) + ".csv"
                )
 
 
@@ -202,24 +213,27 @@ def optimize_neurallda(n_topics: int = 10):
     model_neurallda = NeuralLDA()
     __optimize(model_neurallda,
                neurallda_search_space,
-               base_res_path + "neurallda" + "-" + dataset_name + "-" +str(n_topics) + "//",
-               base_csv_path + "neurallda" + "-" + dataset_name + "-" +str(n_topics) + ".csv"
+               base_res_path + "neurallda" + "-" +
+               dataset_name + "-" + str(n_topics) + "//",
+               base_csv_path + "neurallda" + "-" +
+               dataset_name + "-" + str(n_topics) + ".csv"
                )
 
 
 def optimize_hdp():
     hdp_search_space = {
+        "kappa":  Real(0.5, 1),
+        "tau": Real(8, 128),
     }
 
     model_hdp = HDP()
     __optimize(model_hdp,
                hdp_search_space,
-               base_res_path + "hdp//",
-               base_csv_path + "hdp.csv"
+               base_res_path + "hdp" + "-" + dataset_name + "//",
+               base_csv_path + "hdp" + "-" + dataset_name + ".csv"
                )
 
 
-# TODO: implementation of the model is not complete
 def optimize_custom_top2vec():
     custom_top2vec_search_space = {
     }
@@ -227,22 +241,22 @@ def optimize_custom_top2vec():
     model_custom_top2vec = CustomTop2Vec()
     __optimize(model_custom_top2vec,
                custom_top2vec_search_space,
-               base_res_path + "custom_top2vec//",
-               base_csv_path + "custom_top2vec.csv"
+               base_res_path + "top2vec" + "-" + dataset_name + "//",
+               base_csv_path + "top2vec" + "-" + dataset_name + ".csv"
                )
 
 
-# TODO: implementation of the model is not complete
 def optimize_bertopic():
     bertopic_search_space = {
     }
 
-    model_bertopic = None
+    model_bertopic = CustomBERTopic()
     __optimize(model_bertopic,
                bertopic_search_space,
-               base_res_path + "bertopic//",
-               base_csv_path + "bertopic.csv"
+               base_res_path + "bertopic" + "-" + dataset_name + "//",
+               base_csv_path + "bertopic" + "-" + dataset_name + ".csv"
                )
+
 
 def rm_trash():
     if os.path.exists("_test.pkl"):
@@ -250,18 +264,18 @@ def rm_trash():
 
     if os.path.exists("_train.pkl"):
         os.remove("_train.pkl")
-    
+
     if os.path.exists("_val.pkl"):
         os.remove("_val.pkl")
+
 
 if __name__ == "__main__":
     if (len(sys.argv) != 2):
         print("Usage: python3 tunning.py dataset_folder_path")
         exit(1)
 
-
-    os.chdir(os.getenv("HOME"))
-    os.chdir("octis-compair")
+    # os.chdir(os.getenv("HOME"))
+    # os.chdir("octis-compair")
     dataset_folder_path = sys.argv[1]
     dataset_name = dataset_folder_path.split("/")[-1]
 
@@ -279,21 +293,23 @@ if __name__ == "__main__":
 
     tdci = TDCI(texts=dataset.get_corpus())
 
-    optimization_topic_functions = [
-                                    optimize_ctm, 
-                                    optimize_etm,
-                                    optimize_lda, 
-                                    optimize_lsi, 
-                                    optimize_nmf, 
-                                    optimize_prodlda, 
-                                    optimize_neurallda
-                                    ]
+    # optimization_topic_functions = [
+    #                                 optimize_ctm,
+    #                                 optimize_etm,
+    #                                 optimize_lda,
+    #                                 optimize_lsi,
+    #                                 optimize_nmf,
+    #                                 optimize_prodlda,
+    #                                 optimize_neurallda
+    #                                 ]
 
-    # Run optimizer for models depending on n_topics
-    for n_topics in [10, 20, 30, 40, 50]:
-        print("Optimizing for n_topics = " + str(n_topics) + "...")
-        for func in optimization_topic_functions:
-            with HiddenPrints():
-                func(n_topics)
-                rm_trash()
-            print(str(func.__name__) + " done!")
+    # # Run optimizer for models depending on n_topics
+    # for n_topics in [10, 20, 30, 40, 50]:
+    #     print("Optimizing for n_topics = " + str(n_topics) + "...")
+    #     for func in optimization_topic_functions:
+    #         with HiddenPrints():
+    #             func(n_topics)
+    #             rm_trash()
+    #         print(str(func.__name__) + " done!")
+
+    optimize_hdp()
