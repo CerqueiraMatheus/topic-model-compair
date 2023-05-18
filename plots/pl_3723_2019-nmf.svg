@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="460.8pt" height="345.6pt" viewBox="0 0 460.8 345.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="275.471375pt" height="194.57675pt" viewBox="0 0 275.471375 194.57675" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2023-05-10T08:56:44.613986</dc:date>
+    <dc:date>2023-05-17T09:23:50.066229</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,32 +21,32 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 345.6 
-L 460.8 345.6 
-L 460.8 0 
+   <path d="M 0 194.57675 
+L 275.471375 194.57675 
+L 275.471375 0 
 L 0 0 
 z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 57.6 307.584 
-L 414.72 307.584 
-L 414.72 41.472 
-L 57.6 41.472 
+    <path d="M 45.071375 158.52 
+L 268.271375 158.52 
+L 268.271375 19.92 
+L 45.071375 19.92 
 z
 " style="fill: #eaeaf2"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
-      <path d="M 73.832727 307.584 
-L 73.832727 41.472 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 55.21683 158.52 
+L 55.21683 19.92 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_1">
       <!-- 0 -->
-      <g style="fill: #262626" transform="translate(71.342602 322.044)scale(0.088 -0.088)">
+      <g style="fill: #262626" transform="translate(52.726705 172.98)scale(0.088 -0.088)">
        <defs>
         <path id="Barlow-Medium-30" d="M 1805 -64 
 Q 1158 -64 777 304 
@@ -80,13 +80,13 @@ z
     </g>
     <g id="xtick_2">
      <g id="line2d_2">
-      <path d="M 145.978182 307.584 
-L 145.978182 41.472 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 100.307739 158.52 
+L 100.307739 19.92 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_2">
       <!-- 2 -->
-      <g style="fill: #262626" transform="translate(143.584307 322.044)scale(0.088 -0.088)">
+      <g style="fill: #262626" transform="translate(97.913864 172.98)scale(0.088 -0.088)">
        <defs>
         <path id="Barlow-Medium-32" d="M 1146 563 
 Q 1139 550 1145 540 
@@ -129,13 +129,13 @@ z
     </g>
     <g id="xtick_3">
      <g id="line2d_3">
-      <path d="M 218.123636 307.584 
-L 218.123636 41.472 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 145.398648 158.52 
+L 145.398648 19.92 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_3">
       <!-- 4 -->
-      <g style="fill: #262626" transform="translate(215.615636 322.044)scale(0.088 -0.088)">
+      <g style="fill: #262626" transform="translate(142.890648 172.98)scale(0.088 -0.088)">
        <defs>
         <path id="Barlow-Medium-34" d="M 3226 1754 
 Q 3290 1754 3290 1690 
@@ -179,13 +179,13 @@ z
     </g>
     <g id="xtick_4">
      <g id="line2d_4">
-      <path d="M 290.269091 307.584 
-L 290.269091 41.472 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 190.489557 158.52 
+L 190.489557 19.92 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_4">
       <!-- 6 -->
-      <g style="fill: #262626" transform="translate(287.968028 322.044)scale(0.088 -0.088)">
+      <g style="fill: #262626" transform="translate(188.188494 172.98)scale(0.088 -0.088)">
        <defs>
         <path id="Barlow-Medium-36" d="M 2886 2208 
 Q 3066 1869 3066 1395 
@@ -236,13 +236,13 @@ z
     </g>
     <g id="xtick_5">
      <g id="line2d_5">
-      <path d="M 362.414545 307.584 
-L 362.414545 41.472 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 235.580466 158.52 
+L 235.580466 19.92 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_5">
       <!-- 8 -->
-      <g style="fill: #262626" transform="translate(360.095608 322.044)scale(0.088 -0.088)">
+      <g style="fill: #262626" transform="translate(233.261528 172.98)scale(0.088 -0.088)">
        <defs>
         <path id="Barlow-Medium-38" d="M 2906 1914 
 Q 3040 1645 3040 1274 
@@ -298,7 +298,7 @@ z
     </g>
     <g id="text_6">
      <!-- Optimization Run -->
-     <g style="fill: #262626" transform="translate(200.31825 334.60775)scale(0.096 -0.096)">
+     <g style="fill: #262626" transform="translate(120.829625 185.54375)scale(0.096 -0.096)">
       <defs>
        <path id="Barlow-Medium-4f" d="M 1984 -58 
 Q 1517 -58 1158 134 
@@ -667,13 +667,13 @@ z
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_6">
-      <path d="M 57.6 284.797403 
-L 414.72 284.797403 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 45.071375 146.651981 
+L 268.271375 146.651981 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_7">
       <!-- 0.52 -->
-      <g style="fill: #262626" transform="translate(32.509875 287.877403)scale(0.088 -0.088)">
+      <g style="fill: #262626" transform="translate(19.98125 149.731981)scale(0.088 -0.088)">
        <defs>
         <path id="Barlow-Medium-2e" d="M 864 -6 
 Q 685 -6 569 109 
@@ -738,72 +738,13 @@ z
     </g>
     <g id="ytick_2">
      <g id="line2d_7">
-      <path d="M 57.6 254.202809 
-L 414.72 254.202809 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 45.071375 114.782612 
+L 268.271375 114.782612 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_8">
-      <!-- 0.53 -->
-      <g style="fill: #262626" transform="translate(32.685875 257.282809)scale(0.088 -0.088)">
-       <defs>
-        <path id="Barlow-Medium-33" d="M 2861 2125 
-Q 2989 1811 2989 1402 
-Q 2989 1062 2886 774 
-Q 2746 378 2419 163 
-Q 2093 -51 1632 -51 
-Q 1171 -51 835 185 
-Q 499 422 365 826 
-Q 294 1005 282 1338 
-Q 282 1402 346 1402 
-L 838 1402 
-Q 902 1402 902 1338 
-Q 915 1107 954 998 
-Q 1018 762 1194 621 
-Q 1370 480 1632 480 
-Q 2118 480 2285 922 
-Q 2368 1114 2368 1421 
-Q 2368 1747 2266 2003 
-Q 2086 2400 1626 2400 
-Q 1517 2400 1350 2304 
-Q 1325 2291 1312 2291 
-Q 1280 2291 1261 2323 
-L 1018 2656 
-Q 1005 2682 1005 2701 
-Q 1005 2720 1024 2746 
-L 2118 3917 
-Q 2138 3949 2106 3949 
-L 403 3949 
-Q 339 3949 339 4013 
-L 339 4416 
-Q 339 4480 403 4480 
-L 2886 4480 
-Q 2950 4480 2950 4416 
-L 2950 3955 
-Q 2950 3923 2918 3878 
-L 1946 2816 
-Q 1933 2803 1939 2793 
-Q 1946 2784 1965 2778 
-Q 2291 2746 2515 2576 
-Q 2739 2406 2861 2125 
-z
-" transform="scale(0.015625)"/>
-       </defs>
-       <use xlink:href="#Barlow-Medium-30"/>
-       <use xlink:href="#Barlow-Medium-2e" x="56.599991"/>
-       <use xlink:href="#Barlow-Medium-35" x="84.099976"/>
-       <use xlink:href="#Barlow-Medium-33" x="136.399963"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_8">
-      <path d="M 57.6 223.608216 
-L 414.72 223.608216 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
-     </g>
-     <g id="text_9">
       <!-- 0.54 -->
-      <g style="fill: #262626" transform="translate(32.281625 226.688216)scale(0.088 -0.088)">
+      <g style="fill: #262626" transform="translate(19.753 117.862612)scale(0.088 -0.088)">
        <use xlink:href="#Barlow-Medium-30"/>
        <use xlink:href="#Barlow-Medium-2e" x="56.599991"/>
        <use xlink:href="#Barlow-Medium-35" x="84.099976"/>
@@ -811,31 +752,15 @@ L 414.72 223.608216
       </g>
      </g>
     </g>
-    <g id="ytick_4">
-     <g id="line2d_9">
-      <path d="M 57.6 193.013622 
-L 414.72 193.013622 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
+    <g id="ytick_3">
+     <g id="line2d_8">
+      <path d="M 45.071375 82.913244 
+L 268.271375 82.913244 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
-     <g id="text_10">
-      <!-- 0.55 -->
-      <g style="fill: #262626" transform="translate(32.6955 196.093622)scale(0.088 -0.088)">
-       <use xlink:href="#Barlow-Medium-30"/>
-       <use xlink:href="#Barlow-Medium-2e" x="56.599991"/>
-       <use xlink:href="#Barlow-Medium-35" x="84.099976"/>
-       <use xlink:href="#Barlow-Medium-35" x="136.399963"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_10">
-      <path d="M 57.6 162.419029 
-L 414.72 162.419029 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
-     </g>
-     <g id="text_11">
+     <g id="text_9">
       <!-- 0.56 -->
-      <g style="fill: #262626" transform="translate(32.6955 165.499029)scale(0.088 -0.088)">
+      <g style="fill: #262626" transform="translate(20.166875 85.993244)scale(0.088 -0.088)">
        <use xlink:href="#Barlow-Medium-30"/>
        <use xlink:href="#Barlow-Medium-2e" x="56.599991"/>
        <use xlink:href="#Barlow-Medium-35" x="84.099976"/>
@@ -843,56 +768,15 @@ L 414.72 162.419029
       </g>
      </g>
     </g>
-    <g id="ytick_6">
-     <g id="line2d_11">
-      <path d="M 57.6 131.824435 
-L 414.72 131.824435 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
+    <g id="ytick_4">
+     <g id="line2d_9">
+      <path d="M 45.071375 51.043876 
+L 268.271375 51.043876 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
-     <g id="text_12">
-      <!-- 0.57 -->
-      <g style="fill: #262626" transform="translate(33.065375 134.904435)scale(0.088 -0.088)">
-       <defs>
-        <path id="Barlow-Medium-37" d="M 896 0 
-Q 864 0 848 22 
-Q 832 45 845 77 
-L 2298 3917 
-Q 2304 3930 2297 3939 
-Q 2291 3949 2278 3949 
-L 736 3949 
-Q 710 3949 710 3923 
-L 710 3622 
-Q 710 3558 646 3558 
-L 262 3558 
-Q 198 3558 198 3622 
-L 198 4416 
-Q 198 4480 262 4480 
-L 2893 4480 
-Q 2957 4480 2957 4416 
-L 2957 3987 
-Q 2957 3962 2944 3910 
-L 1498 51 
-Q 1478 0 1427 0 
-L 896 0 
-z
-" transform="scale(0.015625)"/>
-       </defs>
-       <use xlink:href="#Barlow-Medium-30"/>
-       <use xlink:href="#Barlow-Medium-2e" x="56.599991"/>
-       <use xlink:href="#Barlow-Medium-35" x="84.099976"/>
-       <use xlink:href="#Barlow-Medium-37" x="136.399963"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_7">
-     <g id="line2d_12">
-      <path d="M 57.6 101.229842 
-L 414.72 101.229842 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
-     </g>
-     <g id="text_13">
+     <g id="text_10">
       <!-- 0.58 -->
-      <g style="fill: #262626" transform="translate(32.65975 104.309842)scale(0.088 -0.088)">
+      <g style="fill: #262626" transform="translate(20.131125 54.123876)scale(0.088 -0.088)">
        <use xlink:href="#Barlow-Medium-30"/>
        <use xlink:href="#Barlow-Medium-2e" x="56.599991"/>
        <use xlink:href="#Barlow-Medium-35" x="84.099976"/>
@@ -900,70 +784,9 @@ L 414.72 101.229842
       </g>
      </g>
     </g>
-    <g id="ytick_8">
-     <g id="line2d_13">
-      <path d="M 57.6 70.635248 
-L 414.72 70.635248 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: round"/>
-     </g>
-     <g id="text_14">
-      <!-- 0.59 -->
-      <g style="fill: #262626" transform="translate(32.677625 73.715248)scale(0.088 -0.088)">
-       <defs>
-        <path id="Barlow-Medium-39" d="M 2899 3693 
-Q 2995 3424 2995 3072 
-L 2995 1101 
-Q 2995 576 2630 262 
-Q 2266 -51 1677 -51 
-Q 1299 -51 1008 89 
-Q 717 230 557 483 
-Q 397 736 397 1062 
-L 397 1190 
-Q 397 1254 461 1254 
-L 947 1254 
-Q 1011 1254 1011 1190 
-L 1011 1133 
-Q 1011 845 1196 665 
-Q 1382 486 1677 486 
-Q 1984 486 2182 672 
-Q 2381 858 2381 1165 
-L 2381 1971 
-Q 2381 1984 2371 1990 
-Q 2362 1997 2349 1984 
-Q 2074 1670 1549 1670 
-Q 1171 1670 899 1824 
-Q 627 1978 474 2272 
-Q 294 2611 294 3085 
-Q 294 3469 416 3770 
-Q 563 4134 876 4329 
-Q 1190 4525 1632 4525 
-Q 2106 4525 2432 4307 
-Q 2758 4090 2899 3693 
-z
-M 2278 2573 
-Q 2381 2784 2381 3117 
-Q 2381 3386 2298 3571 
-Q 2214 3776 2048 3881 
-Q 1882 3987 1645 3987 
-Q 1408 3987 1245 3881 
-Q 1082 3776 1005 3578 
-Q 909 3379 909 3085 
-Q 909 2765 1018 2560 
-Q 1216 2189 1645 2189 
-Q 2099 2189 2278 2573 
-z
-" transform="scale(0.015625)"/>
-       </defs>
-       <use xlink:href="#Barlow-Medium-30"/>
-       <use xlink:href="#Barlow-Medium-2e" x="56.599991"/>
-       <use xlink:href="#Barlow-Medium-35" x="84.099976"/>
-       <use xlink:href="#Barlow-Medium-39" x="136.399963"/>
-      </g>
-     </g>
-    </g>
-    <g id="text_15">
+    <g id="text_11">
      <!-- Mean TDCI -->
-     <g style="fill: #262626" transform="translate(26.448625 196.4595)rotate(-90)scale(0.096 -0.096)">
+     <g style="fill: #262626" transform="translate(13.92 111.1515)rotate(-90)scale(0.096 -0.096)">
       <defs>
        <path id="Barlow-Medium-4d" d="M 3424 4442 
 Q 3456 4480 3501 4480 
@@ -1135,222 +958,100 @@ z
      </g>
     </g>
    </g>
+   <g id="line2d_10">
+    <path d="M 55.21683 90.440342 
+L 77.762284 91.990554 
+L 100.307739 58.825081 
+L 122.853193 73.716733 
+L 145.398648 65.14801 
+L 167.944102 82.262203 
+L 190.489557 53.220716 
+L 213.035011 53.084405 
+L 235.580466 57.596332 
+L 258.12592 62.887072 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke: #4c72b0; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 55.21683 77.79786 
+L 77.762284 67.40123 
+L 100.307739 83.35206 
+L 122.853193 73.013933 
+L 145.398648 47.185752 
+L 167.944102 68.395135 
+L 190.489557 79.506225 
+L 213.035011 73.689013 
+L 235.580466 152.22 
+L 258.12592 76.182407 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke-dasharray: 4.8,1.8; stroke-dashoffset: 0; stroke: #dd8452; stroke-width: 1.2"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 55.21683 72.996832 
+L 77.762284 73.59015 
+L 100.307739 67.288782 
+L 122.853193 76.327842 
+L 145.398648 63.368485 
+L 167.944102 58.681942 
+L 190.489557 71.390903 
+L 213.035011 62.64374 
+L 235.580466 74.103222 
+L 258.12592 102.805293 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke-dasharray: 1.2,1.2; stroke-dashoffset: 0; stroke: #55a868; stroke-width: 1.2"/>
+   </g>
+   <g id="line2d_13">
+    <path d="M 55.21683 66.752024 
+L 77.762284 26.22 
+L 100.307739 58.751989 
+L 122.853193 43.348852 
+L 145.398648 48.330308 
+L 167.944102 38.871075 
+L 190.489557 43.63059 
+L 213.035011 47.362739 
+L 235.580466 47.606337 
+L 258.12592 37.498837 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke-dasharray: 3.6,1.5,1.8,1.5; stroke-dashoffset: 0; stroke: #c44e52; stroke-width: 1.2"/>
+   </g>
    <g id="line2d_14">
-    <path d="M 73.832727 176.871057 
-L 109.905455 179.847463 
-L 145.978182 116.169755 
-L 182.050909 144.761727 
-L 218.123636 128.309779 
-L 254.196364 161.16903 
-L 290.269091 105.409375 
-L 326.341818 105.147657 
-L 362.414545 113.810558 
-L 398.487273 123.968779 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke: #4c72b0; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 55.21683 56.59128 
+L 77.762284 53.045167 
+L 100.307739 56.59666 
+L 122.853193 39.561724 
+L 145.398648 50.725109 
+L 167.944102 32.233847 
+L 190.489557 68.588606 
+L 213.035011 40.118234 
+L 235.580466 39.863335 
+L 258.12592 34.616627 
+" clip-path="url(#pff5f3f08c1)" style="fill: none; stroke-dasharray: 6,1.2,1.2,1.2; stroke-dashoffset: 0; stroke: #8172b3; stroke-width: 1.2"/>
    </g>
-   <g id="line2d_15">
-    <path d="M 73.832727 152.597491 
-L 109.905455 132.635961 
-L 145.978182 163.261556 
-L 182.050909 143.412351 
-L 218.123636 93.822243 
-L 254.196364 134.54426 
-L 290.269091 155.877552 
-L 326.341818 144.708504 
-L 362.414545 295.488 
-L 398.487273 149.495822 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke-dasharray: 4.8,1.8; stroke-dashoffset: 0; stroke: #dd8452; stroke-width: 1.2"/>
-   </g>
-   <g id="line2d_16">
-    <path d="M 73.832727 143.379518 
-L 109.905455 144.518687 
-L 145.978182 132.420061 
-L 182.050909 149.775057 
-L 218.123636 124.893092 
-L 254.196364 115.894928 
-L 290.269091 140.296133 
-L 326.341818 123.50158 
-L 362.414545 145.503786 
-L 398.487273 200.611763 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke-dasharray: 1.2,1.2; stroke-dashoffset: 0; stroke: #55a868; stroke-width: 1.2"/>
-   </g>
-   <g id="line2d_17">
-    <path d="M 73.832727 131.389487 
-L 109.905455 53.568 
-L 145.978182 116.029418 
-L 182.050909 86.455396 
-L 218.123636 96.019792 
-L 254.196364 77.858065 
-L 290.269091 86.996333 
-L 326.341818 94.162059 
-L 362.414545 94.629767 
-L 398.487273 75.223366 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke-dasharray: 3.6,1.5,1.8,1.5; stroke-dashoffset: 0; stroke: #c44e52; stroke-width: 1.2"/>
-   </g>
-   <g id="line2d_18">
-    <path d="M 73.832727 111.880858 
-L 109.905455 105.072321 
-L 145.978182 111.891187 
-L 182.050909 79.184111 
-L 218.123636 100.617809 
-L 254.196364 65.114587 
-L 290.269091 134.915723 
-L 326.341818 80.25261 
-L 362.414545 79.763204 
-L 398.487273 69.689523 
-" clip-path="url(#pfcaea6b453)" style="fill: none; stroke-dasharray: 6,1.2,1.2,1.2; stroke-dashoffset: 0; stroke: #8172b3; stroke-width: 1.2"/>
-   </g>
+   <g id="line2d_15"/>
+   <g id="line2d_16"/>
+   <g id="line2d_17"/>
+   <g id="line2d_18"/>
    <g id="line2d_19"/>
-   <g id="line2d_20"/>
-   <g id="line2d_21"/>
-   <g id="line2d_22"/>
-   <g id="line2d_23"/>
    <g id="patch_3">
-    <path d="M 57.6 307.584 
-L 57.6 41.472 
+    <path d="M 45.071375 158.52 
+L 45.071375 19.92 
 " style="fill: none; stroke: #ffffff; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_4">
-    <path d="M 414.72 307.584 
-L 414.72 41.472 
+    <path d="M 268.271375 158.52 
+L 268.271375 19.92 
 " style="fill: none; stroke: #ffffff; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_5">
-    <path d="M 57.6 307.584 
-L 414.72 307.584 
+    <path d="M 45.071375 158.52 
+L 268.271375 158.52 
 " style="fill: none; stroke: #ffffff; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_6">
-    <path d="M 57.6 41.472 
-L 414.72 41.472 
+    <path d="M 45.071375 19.92 
+L 268.271375 19.92 
 " style="fill: none; stroke: #ffffff; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="text_16">
-    <!-- TDCI along optimization runs - NMF - PL 3723 2019 -->
-    <g style="fill: #262626" transform="translate(132.1335 35.472)scale(0.096 -0.096)">
+   <g id="text_12">
+    <!-- TDCI - NMF - PL 3723 2019 -->
+    <g style="fill: #262626" transform="translate(102.742625 13.92)scale(0.096 -0.096)">
      <defs>
-      <path id="Barlow-Medium-6c" d="M 512 0 
-Q 448 0 448 64 
-L 448 4416 
-Q 448 4480 512 4480 
-L 998 4480 
-Q 1062 4480 1062 4416 
-L 1062 64 
-Q 1062 0 998 0 
-L 512 0 
-z
-" transform="scale(0.015625)"/>
-      <path id="Barlow-Medium-67" d="M 2451 3194 
-Q 2451 3258 2515 3258 
-L 3002 3258 
-Q 3066 3258 3066 3194 
-L 3066 166 
-Q 3066 -608 2627 -941 
-Q 2189 -1274 1453 -1274 
-Q 1350 -1274 1133 -1261 
-Q 1069 -1254 1069 -1190 
-L 1088 -749 
-Q 1088 -723 1107 -704 
-Q 1126 -685 1158 -691 
-Q 1248 -698 1421 -698 
-Q 1965 -698 2208 -496 
-Q 2451 -294 2451 186 
-L 2451 301 
-Q 2451 314 2441 320 
-Q 2432 326 2419 314 
-Q 2150 0 1632 0 
-Q 1216 0 880 217 
-Q 544 435 416 858 
-Q 333 1139 333 1638 
-Q 333 2170 429 2458 
-Q 550 2842 860 3075 
-Q 1171 3309 1594 3309 
-Q 2118 3309 2419 2989 
-Q 2432 2976 2441 2979 
-Q 2451 2982 2451 2995 
-L 2451 3194 
-z
-M 2413 1043 
-Q 2432 1146 2441 1261 
-Q 2451 1376 2451 1645 
-Q 2451 1914 2441 2026 
-Q 2432 2138 2406 2240 
-Q 2355 2477 2176 2627 
-Q 1997 2778 1728 2778 
-Q 1459 2778 1280 2627 
-Q 1101 2477 1024 2240 
-Q 954 2048 954 1645 
-Q 954 1203 1018 1043 
-Q 1082 806 1270 656 
-Q 1459 506 1728 506 
-Q 2010 506 2186 656 
-Q 2362 806 2413 1043 
-z
-" transform="scale(0.015625)"/>
-      <path id="Barlow-Medium-72" d="M 1875 3290 
-Q 2080 3290 2246 3206 
-Q 2291 3187 2278 3130 
-L 2176 2650 
-Q 2170 2592 2099 2611 
-Q 1990 2656 1843 2656 
-L 1754 2650 
-Q 1453 2637 1257 2441 
-Q 1062 2246 1062 1933 
-L 1062 64 
-Q 1062 0 998 0 
-L 512 0 
-Q 448 0 448 64 
-L 448 3194 
-Q 448 3258 512 3258 
-L 998 3258 
-Q 1062 3258 1062 3194 
-L 1062 2854 
-Q 1062 2835 1072 2832 
-Q 1082 2829 1088 2842 
-Q 1376 3290 1875 3290 
-z
-" transform="scale(0.015625)"/>
-      <path id="Barlow-Medium-73" d="M 1594 -38 
-Q 1210 -38 918 77 
-Q 627 192 467 393 
-Q 307 595 307 838 
-L 307 909 
-Q 307 973 371 973 
-L 832 973 
-Q 896 973 896 909 
-L 896 877 
-Q 896 698 1091 563 
-Q 1286 429 1587 429 
-Q 1875 429 2054 553 
-Q 2234 678 2234 870 
-Q 2234 1056 2067 1149 
-Q 1901 1242 1530 1344 
-Q 1165 1446 918 1552 
-Q 672 1658 502 1853 
-Q 333 2048 333 2355 
-Q 333 2784 669 3037 
-Q 1005 3290 1562 3290 
-Q 1933 3290 2217 3171 
-Q 2502 3053 2656 2841 
-Q 2810 2630 2810 2368 
-L 2810 2349 
-Q 2810 2285 2746 2285 
-L 2298 2285 
-Q 2234 2285 2234 2349 
-L 2234 2368 
-Q 2234 2554 2051 2678 
-Q 1869 2803 1555 2803 
-Q 1274 2803 1098 2694 
-Q 922 2586 922 2400 
-Q 922 2214 1091 2118 
-Q 1261 2022 1638 1914 
-Q 2010 1811 2256 1712 
-Q 2502 1613 2675 1417 
-Q 2848 1222 2848 909 
-Q 2848 474 2505 218 
-Q 2163 -38 1594 -38 
-z
-" transform="scale(0.015625)"/>
       <path id="Barlow-Medium-2d" d="M 288 1690 
 Q 224 1690 224 1754 
 L 224 2157 
@@ -1454,6 +1155,70 @@ Q 3437 0 3373 0
 L 589 0 
 z
 " transform="scale(0.015625)"/>
+      <path id="Barlow-Medium-33" d="M 2861 2125 
+Q 2989 1811 2989 1402 
+Q 2989 1062 2886 774 
+Q 2746 378 2419 163 
+Q 2093 -51 1632 -51 
+Q 1171 -51 835 185 
+Q 499 422 365 826 
+Q 294 1005 282 1338 
+Q 282 1402 346 1402 
+L 838 1402 
+Q 902 1402 902 1338 
+Q 915 1107 954 998 
+Q 1018 762 1194 621 
+Q 1370 480 1632 480 
+Q 2118 480 2285 922 
+Q 2368 1114 2368 1421 
+Q 2368 1747 2266 2003 
+Q 2086 2400 1626 2400 
+Q 1517 2400 1350 2304 
+Q 1325 2291 1312 2291 
+Q 1280 2291 1261 2323 
+L 1018 2656 
+Q 1005 2682 1005 2701 
+Q 1005 2720 1024 2746 
+L 2118 3917 
+Q 2138 3949 2106 3949 
+L 403 3949 
+Q 339 3949 339 4013 
+L 339 4416 
+Q 339 4480 403 4480 
+L 2886 4480 
+Q 2950 4480 2950 4416 
+L 2950 3955 
+Q 2950 3923 2918 3878 
+L 1946 2816 
+Q 1933 2803 1939 2793 
+Q 1946 2784 1965 2778 
+Q 2291 2746 2515 2576 
+Q 2739 2406 2861 2125 
+z
+" transform="scale(0.015625)"/>
+      <path id="Barlow-Medium-37" d="M 896 0 
+Q 864 0 848 22 
+Q 832 45 845 77 
+L 2298 3917 
+Q 2304 3930 2297 3939 
+Q 2291 3949 2278 3949 
+L 736 3949 
+Q 710 3949 710 3923 
+L 710 3622 
+Q 710 3558 646 3558 
+L 262 3558 
+Q 198 3558 198 3622 
+L 198 4416 
+Q 198 4480 262 4480 
+L 2893 4480 
+Q 2957 4480 2957 4416 
+L 2957 3987 
+Q 2957 3962 2944 3910 
+L 1498 51 
+Q 1478 0 1427 0 
+L 896 0 
+z
+" transform="scale(0.015625)"/>
       <path id="Barlow-Medium-31" d="M 1088 4461 
 Q 1126 4480 1171 4480 
 L 1677 4480 
@@ -1473,75 +1238,94 @@ Q 320 4083 358 4096
 L 1088 4461 
 z
 " transform="scale(0.015625)"/>
+      <path id="Barlow-Medium-39" d="M 2899 3693 
+Q 2995 3424 2995 3072 
+L 2995 1101 
+Q 2995 576 2630 262 
+Q 2266 -51 1677 -51 
+Q 1299 -51 1008 89 
+Q 717 230 557 483 
+Q 397 736 397 1062 
+L 397 1190 
+Q 397 1254 461 1254 
+L 947 1254 
+Q 1011 1254 1011 1190 
+L 1011 1133 
+Q 1011 845 1196 665 
+Q 1382 486 1677 486 
+Q 1984 486 2182 672 
+Q 2381 858 2381 1165 
+L 2381 1971 
+Q 2381 1984 2371 1990 
+Q 2362 1997 2349 1984 
+Q 2074 1670 1549 1670 
+Q 1171 1670 899 1824 
+Q 627 1978 474 2272 
+Q 294 2611 294 3085 
+Q 294 3469 416 3770 
+Q 563 4134 876 4329 
+Q 1190 4525 1632 4525 
+Q 2106 4525 2432 4307 
+Q 2758 4090 2899 3693 
+z
+M 2278 2573 
+Q 2381 2784 2381 3117 
+Q 2381 3386 2298 3571 
+Q 2214 3776 2048 3881 
+Q 1882 3987 1645 3987 
+Q 1408 3987 1245 3881 
+Q 1082 3776 1005 3578 
+Q 909 3379 909 3085 
+Q 909 2765 1018 2560 
+Q 1216 2189 1645 2189 
+Q 2099 2189 2278 2573 
+z
+" transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#Barlow-Medium-54"/>
      <use xlink:href="#Barlow-Medium-44" x="57.399994"/>
      <use xlink:href="#Barlow-Medium-43" x="119.199982"/>
      <use xlink:href="#Barlow-Medium-49" x="179.899979"/>
      <use xlink:href="#Barlow-Medium-20" x="205.899963"/>
-     <use xlink:href="#Barlow-Medium-61" x="225.899948"/>
-     <use xlink:href="#Barlow-Medium-6c" x="277.599945"/>
-     <use xlink:href="#Barlow-Medium-6f" x="301.09993"/>
-     <use xlink:href="#Barlow-Medium-6e" x="356.599915"/>
-     <use xlink:href="#Barlow-Medium-67" x="410.799911"/>
-     <use xlink:href="#Barlow-Medium-20" x="465.099899"/>
-     <use xlink:href="#Barlow-Medium-6f" x="485.099884"/>
-     <use xlink:href="#Barlow-Medium-70" x="540.599869"/>
-     <use xlink:href="#Barlow-Medium-74" x="596.399857"/>
-     <use xlink:href="#Barlow-Medium-69" x="633.29985"/>
-     <use xlink:href="#Barlow-Medium-6d" x="658.799835"/>
-     <use xlink:href="#Barlow-Medium-69" x="741.399826"/>
-     <use xlink:href="#Barlow-Medium-7a" x="766.899811"/>
-     <use xlink:href="#Barlow-Medium-61" x="811.999802"/>
-     <use xlink:href="#Barlow-Medium-74" x="863.699799"/>
-     <use xlink:href="#Barlow-Medium-69" x="900.599792"/>
-     <use xlink:href="#Barlow-Medium-6f" x="926.099777"/>
-     <use xlink:href="#Barlow-Medium-6e" x="981.599762"/>
-     <use xlink:href="#Barlow-Medium-20" x="1035.799759"/>
-     <use xlink:href="#Barlow-Medium-72" x="1055.799744"/>
-     <use xlink:href="#Barlow-Medium-75" x="1092.899734"/>
-     <use xlink:href="#Barlow-Medium-6e" x="1146.699722"/>
-     <use xlink:href="#Barlow-Medium-73" x="1200.899719"/>
-     <use xlink:href="#Barlow-Medium-20" x="1249.599716"/>
-     <use xlink:href="#Barlow-Medium-2d" x="1269.599701"/>
-     <use xlink:href="#Barlow-Medium-20" x="1309.599686"/>
-     <use xlink:href="#Barlow-Medium-4e" x="1329.59967"/>
-     <use xlink:href="#Barlow-Medium-4d" x="1396.899658"/>
-     <use xlink:href="#Barlow-Medium-46" x="1468.399643"/>
-     <use xlink:href="#Barlow-Medium-20" x="1524.899628"/>
-     <use xlink:href="#Barlow-Medium-2d" x="1544.899612"/>
-     <use xlink:href="#Barlow-Medium-20" x="1584.899597"/>
-     <use xlink:href="#Barlow-Medium-50" x="1604.899582"/>
-     <use xlink:href="#Barlow-Medium-4c" x="1664.19957"/>
-     <use xlink:href="#Barlow-Medium-20" x="1721.199554"/>
-     <use xlink:href="#Barlow-Medium-33" x="1741.199539"/>
-     <use xlink:href="#Barlow-Medium-37" x="1793.599533"/>
-     <use xlink:href="#Barlow-Medium-32" x="1841.699524"/>
-     <use xlink:href="#Barlow-Medium-33" x="1896.099518"/>
-     <use xlink:href="#Barlow-Medium-20" x="1948.499512"/>
-     <use xlink:href="#Barlow-Medium-32" x="1968.499496"/>
-     <use xlink:href="#Barlow-Medium-30" x="2022.89949"/>
-     <use xlink:href="#Barlow-Medium-31" x="2079.499481"/>
-     <use xlink:href="#Barlow-Medium-39" x="2114.699478"/>
+     <use xlink:href="#Barlow-Medium-2d" x="225.899948"/>
+     <use xlink:href="#Barlow-Medium-20" x="265.899933"/>
+     <use xlink:href="#Barlow-Medium-4e" x="285.899918"/>
+     <use xlink:href="#Barlow-Medium-4d" x="353.199905"/>
+     <use xlink:href="#Barlow-Medium-46" x="424.69989"/>
+     <use xlink:href="#Barlow-Medium-20" x="481.199875"/>
+     <use xlink:href="#Barlow-Medium-2d" x="501.19986"/>
+     <use xlink:href="#Barlow-Medium-20" x="541.199844"/>
+     <use xlink:href="#Barlow-Medium-50" x="561.199829"/>
+     <use xlink:href="#Barlow-Medium-4c" x="620.499817"/>
+     <use xlink:href="#Barlow-Medium-20" x="677.499802"/>
+     <use xlink:href="#Barlow-Medium-33" x="697.499786"/>
+     <use xlink:href="#Barlow-Medium-37" x="749.89978"/>
+     <use xlink:href="#Barlow-Medium-32" x="797.999771"/>
+     <use xlink:href="#Barlow-Medium-33" x="852.399765"/>
+     <use xlink:href="#Barlow-Medium-20" x="904.799759"/>
+     <use xlink:href="#Barlow-Medium-32" x="924.799744"/>
+     <use xlink:href="#Barlow-Medium-30" x="979.199738"/>
+     <use xlink:href="#Barlow-Medium-31" x="1035.799728"/>
+     <use xlink:href="#Barlow-Medium-39" x="1070.999725"/>
     </g>
    </g>
    <g id="legend_1">
     <g id="patch_7">
-     <path d="M 63.76 303.184 
-L 101.91625 303.184 
-Q 103.67625 303.184 103.67625 301.424 
-L 103.67625 227.98625 
-Q 103.67625 226.22625 101.91625 226.22625 
-L 63.76 226.22625 
-Q 62 226.22625 62 227.98625 
-L 62 301.424 
-Q 62 303.184 63.76 303.184 
+     <path d="M 137.59325 154.12 
+L 175.7495 154.12 
+Q 177.5095 154.12 177.5095 152.36 
+L 177.5095 78.92225 
+Q 177.5095 77.16225 175.7495 77.16225 
+L 137.59325 77.16225 
+Q 135.83325 77.16225 135.83325 78.92225 
+L 135.83325 152.36 
+Q 135.83325 154.12 137.59325 154.12 
 z
 " style="fill: #eaeaf2; opacity: 0.8; stroke: #cccccc; stroke-width: 0.8; stroke-linejoin: miter"/>
     </g>
-    <g id="text_17">
+    <g id="text_13">
      <!-- Topics -->
-     <g style="fill: #262626" transform="translate(68.654125 236.62975)scale(0.096 -0.096)">
+     <g style="fill: #262626" transform="translate(142.487375 87.56575)scale(0.096 -0.096)">
       <defs>
        <path id="Barlow-Medium-63" d="M 1754 -51 
 Q 1267 -51 921 195 
@@ -1580,6 +1364,47 @@ Q 2950 422 2592 185
 Q 2234 -51 1754 -51 
 z
 " transform="scale(0.015625)"/>
+       <path id="Barlow-Medium-73" d="M 1594 -38 
+Q 1210 -38 918 77 
+Q 627 192 467 393 
+Q 307 595 307 838 
+L 307 909 
+Q 307 973 371 973 
+L 832 973 
+Q 896 973 896 909 
+L 896 877 
+Q 896 698 1091 563 
+Q 1286 429 1587 429 
+Q 1875 429 2054 553 
+Q 2234 678 2234 870 
+Q 2234 1056 2067 1149 
+Q 1901 1242 1530 1344 
+Q 1165 1446 918 1552 
+Q 672 1658 502 1853 
+Q 333 2048 333 2355 
+Q 333 2784 669 3037 
+Q 1005 3290 1562 3290 
+Q 1933 3290 2217 3171 
+Q 2502 3053 2656 2841 
+Q 2810 2630 2810 2368 
+L 2810 2349 
+Q 2810 2285 2746 2285 
+L 2298 2285 
+Q 2234 2285 2234 2349 
+L 2234 2368 
+Q 2234 2554 2051 2678 
+Q 1869 2803 1555 2803 
+Q 1274 2803 1098 2694 
+Q 922 2586 922 2400 
+Q 922 2214 1091 2118 
+Q 1261 2022 1638 1914 
+Q 2010 1811 2256 1712 
+Q 2502 1613 2675 1417 
+Q 2848 1222 2848 909 
+Q 2848 474 2505 218 
+Q 2163 -38 1594 -38 
+z
+" transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#Barlow-Medium-54"/>
       <use xlink:href="#Barlow-Medium-6f" x="57.399994"/>
@@ -1589,67 +1414,67 @@ z
       <use xlink:href="#Barlow-Medium-73" x="246.799942"/>
      </g>
     </g>
-    <g id="line2d_24">
-     <path d="M 65.52 245.94275 
-L 74.32 245.94275 
-L 83.12 245.94275 
+    <g id="line2d_20">
+     <path d="M 139.35325 96.87875 
+L 148.15325 96.87875 
+L 156.95325 96.87875 
 " style="fill: none; stroke: #4c72b0; stroke-width: 1.2; stroke-linecap: round"/>
     </g>
-    <g id="text_18">
+    <g id="text_14">
      <!-- 10 -->
-     <g style="fill: #262626" transform="translate(90.16 249.02275)scale(0.088 -0.088)">
+     <g style="fill: #262626" transform="translate(163.99325 99.95875)scale(0.088 -0.088)">
       <use xlink:href="#Barlow-Medium-31"/>
       <use xlink:href="#Barlow-Medium-30" x="35.199997"/>
      </g>
     </g>
-    <g id="line2d_25">
-     <path d="M 65.52 258.183 
-L 74.32 258.183 
-L 83.12 258.183 
+    <g id="line2d_21">
+     <path d="M 139.35325 109.119 
+L 148.15325 109.119 
+L 156.95325 109.119 
 " style="fill: none; stroke-dasharray: 4.8,1.8; stroke-dashoffset: 0; stroke: #dd8452; stroke-width: 1.2"/>
     </g>
-    <g id="text_19">
+    <g id="text_15">
      <!-- 20 -->
-     <g style="fill: #262626" transform="translate(90.16 261.263)scale(0.088 -0.088)">
+     <g style="fill: #262626" transform="translate(163.99325 112.199)scale(0.088 -0.088)">
       <use xlink:href="#Barlow-Medium-32"/>
       <use xlink:href="#Barlow-Medium-30" x="54.399994"/>
      </g>
     </g>
-    <g id="line2d_26">
-     <path d="M 65.52 270.42325 
-L 74.32 270.42325 
-L 83.12 270.42325 
+    <g id="line2d_22">
+     <path d="M 139.35325 121.35925 
+L 148.15325 121.35925 
+L 156.95325 121.35925 
 " style="fill: none; stroke-dasharray: 1.2,1.2; stroke-dashoffset: 0; stroke: #55a868; stroke-width: 1.2"/>
     </g>
-    <g id="text_20">
+    <g id="text_16">
      <!-- 30 -->
-     <g style="fill: #262626" transform="translate(90.16 273.50325)scale(0.088 -0.088)">
+     <g style="fill: #262626" transform="translate(163.99325 124.43925)scale(0.088 -0.088)">
       <use xlink:href="#Barlow-Medium-33"/>
       <use xlink:href="#Barlow-Medium-30" x="52.399994"/>
      </g>
     </g>
-    <g id="line2d_27">
-     <path d="M 65.52 282.6635 
-L 74.32 282.6635 
-L 83.12 282.6635 
+    <g id="line2d_23">
+     <path d="M 139.35325 133.5995 
+L 148.15325 133.5995 
+L 156.95325 133.5995 
 " style="fill: none; stroke-dasharray: 3.6,1.5,1.8,1.5; stroke-dashoffset: 0; stroke: #c44e52; stroke-width: 1.2"/>
     </g>
-    <g id="text_21">
+    <g id="text_17">
      <!-- 40 -->
-     <g style="fill: #262626" transform="translate(90.16 285.7435)scale(0.088 -0.088)">
+     <g style="fill: #262626" transform="translate(163.99325 136.6795)scale(0.088 -0.088)">
       <use xlink:href="#Barlow-Medium-34"/>
       <use xlink:href="#Barlow-Medium-30" x="56.999985"/>
      </g>
     </g>
-    <g id="line2d_28">
-     <path d="M 65.52 294.90375 
-L 74.32 294.90375 
-L 83.12 294.90375 
+    <g id="line2d_24">
+     <path d="M 139.35325 145.83975 
+L 148.15325 145.83975 
+L 156.95325 145.83975 
 " style="fill: none; stroke-dasharray: 6,1.2,1.2,1.2; stroke-dashoffset: 0; stroke: #8172b3; stroke-width: 1.2"/>
     </g>
-    <g id="text_22">
+    <g id="text_18">
      <!-- 50 -->
-     <g style="fill: #262626" transform="translate(90.16 297.98375)scale(0.088 -0.088)">
+     <g style="fill: #262626" transform="translate(163.99325 148.91975)scale(0.088 -0.088)">
       <use xlink:href="#Barlow-Medium-35"/>
       <use xlink:href="#Barlow-Medium-30" x="52.299988"/>
      </g>
@@ -1658,8 +1483,8 @@ L 83.12 294.90375
   </g>
  </g>
  <defs>
-  <clipPath id="pfcaea6b453">
-   <rect x="57.6" y="41.472" width="357.12" height="266.112"/>
+  <clipPath id="pff5f3f08c1">
+   <rect x="45.071375" y="19.92" width="223.2" height="138.6"/>
   </clipPath>
  </defs>
 </svg>
