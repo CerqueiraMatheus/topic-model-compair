@@ -108,7 +108,7 @@ class CustomTop2Vec(AbstractModel):
     def _prepare_model(self, dataset):
         self._model = Top2Vec(
             documents=[' '.join(doc) for doc in dataset],
-            embedding_model='universal-sentence-encoder-multilingual',
+            embedding_model="doc2vec"
         )
 
     def _get_topics(self):
