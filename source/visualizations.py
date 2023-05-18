@@ -19,17 +19,18 @@ def visualize_model_along_exec(alg_name: str, dataset_name: str):
         dfs.append(list(pd.read_csv("tunning/csv/" + alg_name + "-" +
                    dataset_name + "-" + str(n_topic) + ".csv")["Mean(model_runs)"]))
         print(pd.read_csv("tunning/csv/" + alg_name + "-" + dataset_name + "-" + str(n_topic) + ".csv").sort_values(
-            by="Mean(model_runs)", ascending=False).head(1)[["Mean(model_runs)", "Coherence(not optimized)", "Topic diversity(not optimized)"]])
+            by="Mean(model_runs)", ascending=False).head(1))
 
     str_topics = [str(x) for x in n_topics]
+    plt.figure(figsize=(4,2.5))
     sns.lineplot(data=dfs)
     plt.xlabel("Optimization Run")
     plt.ylabel("Mean TDCI")
-    plt.title("TDCI along optimization runs - " + alg_name.upper() +
+    plt.title("TDCI - " + alg_name.upper() +
               " - " + dataset_name.replace('_', ' ').upper())
     plt.legend(str_topics, title="Topics")
     plt.savefig("plots/" + dataset_name + "-" +
-                alg_name + ".svg", format="svg", dpi=300)
+                alg_name + ".svg", format="svg", dpi=300, bbox_inches="tight")
     plt.clf()
 
 
@@ -42,7 +43,7 @@ if __name__ == "__main__":
 
     sns.set(style="darkgrid")
     sns.set_context("paper")
-    plt.rcParams["font.size"] = 12
+    plt.rcParams["font.size"] = 8
     plt.rcParams["font.family"] = "Barlow Medium"
 
     for tm in ["ctm", "etm", "lda", "lsi", "nmf", "neurallda", "prodlda"]:

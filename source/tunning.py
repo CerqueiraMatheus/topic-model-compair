@@ -91,8 +91,6 @@ def optimize_etm(n_topics: int = 10):
         "num_topics": [n_topics],
         "optimizer": Categorical({"adam", "adagrad", "adadelta", "rmsprop", "asgd", "sgd"}),
         "t_hidden_size": Integer(400, 1000),
-        "rho": Integer(200, 600),
-        "num_neurons": Categorical({100, 200, 300}),
         "activation": Categorical({'sigmoid', 'relu', 'softplus'}),
         "dropout": Real(0.0, 0.95),
         "num_epochs": Integer(100, 500)
